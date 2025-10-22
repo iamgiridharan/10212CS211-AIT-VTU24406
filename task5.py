@@ -1,3 +1,5 @@
+#Task 5:Implementation of Ant Colony Optimization to Optimize Ride-Sharing Trip Duration using Python by following constraints.
+
 import numpy as np
 from numpy import inf
 d = np.array([
@@ -56,9 +58,22 @@ for ite in range(iteration):
             a = int(rute_opt[i, j]) - 1
             b = int(rute_opt[i, j+1]) - 1
             pheromone[a, b] += dt
-print("Task 5:Implementation of Ant Colony Optimization to Optimize Ride-Sharing Trip Duration using Python by following constraints.")
+
 print("Final Routes of all Ants:")
 print(rute_opt)
 print()
 print("Best Route (Ride-Sharing Path):", best_route)
 print("Optimal Trip Duration (minutes):", int(dist_min_cost[0]) + d[int(best_route[-2]) - 1, 0])
+
+
+#Output:
+
+#Final Routes of all Ants:
+# [[1. 2. 5. 4. 3. 1.]
+#  [1. 2. 5. 4. 3. 1.]
+#  [1. 2. 5. 4. 3. 1.]
+#  [1. 2. 5. 4. 3. 1.]
+#  [1. 2. 5. 4. 3. 1.]]
+
+# Best Route (Ride-Sharing Path): [1. 2. 5. 4. 3. 1.]
+# Optimal Trip Duration (minutes): 55
