@@ -1,3 +1,5 @@
+#Task7: Implementation of Monkey Banana Problem in Goal stack planning using python by applying following constraints.
+
 def move(subject, x1, x2):
  return f"Move {subject} from {x1} to {x2}"
 def push_box(x1, x2):
@@ -29,3 +31,11 @@ print("Plan:")
 for action in actions:
  print(action)
     
+
+#Output:
+
+#Plan:
+# Move Monkey from 0 to 1
+# Climb box at 1 Up
+# Have banana at 1
+   
