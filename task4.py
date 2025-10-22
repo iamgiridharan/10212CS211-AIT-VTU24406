@@ -24,4 +24,8 @@ def minimax(depth, nodeIndex, maximizingPlayer, values, alpha, beta):
         return best
 if __name__ == "__main__":
     values = [3, 9, 6, 12, 1, 22, 0, -1]  
+
     print("The optimal value is:", minimax(0, 0, True, values, MIN, MAX))
+
+#Output:
+# The optimal value is: 9   
