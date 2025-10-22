@@ -1,3 +1,5 @@
+#Task6:Map coloring problem using constraint satisfaction approach
+
 class Graph:
     def __init__(self, vertices):
         self.v = vertices
@@ -24,7 +26,6 @@ class Graph:
         color = [0] * self.v
         if not self.graph_color_util(m, color, 0):
             return False
-        print("Task6:Map coloring problem using constraint satisfaction approach")
         print("Solution exists and following are the assigned colors:")
         for c in color:
             print(c, end=" ")
@@ -39,3 +40,8 @@ if __name__ == '__main__':
     ]
     m = 3
     g.graph_coloring(m)
+
+#Output:
+
+# Solution exists and following are the assigned colors:
+# 1 2 3 2    
