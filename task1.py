@@ -31,4 +31,14 @@ graph = {
 }
 
 bfs(graph, 'A')
+
 dfs(graph, 'A')
+
+
+#Output for Task 1A:
+
+# BFS Traversal: A B C F D E 
+
+#Output for Task 1B:
+
+# DFS Traversal: A B F C E D
